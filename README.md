@@ -29,7 +29,7 @@ https://git-scm.com/download
 - git branch -D [branch_name]: exclui a branch [branch_name]
 
 [x] hospedar o projeto na nuvem do github, utilizando terminal/ambiente WSL-2 (Windows subsystem for Linux 2) com o Windows 11 
-- instalar/atualizar o git no terminal WSL2: No Ubuntu > sudo apt-get install git. Geralmente o git vem pré-instalado nas diversas distros
+- instalar/atualizar o git no terminal WSL2: No Ubuntu > sudo apt-get install git.Geralmente o git vem pré-instalado nas diversas distros
 - instalar o Git e o Git GUI no windows: https://git-scm.com/download/win
 - executar o Git GUI conectá-lo 
 - git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager-core.exe"
