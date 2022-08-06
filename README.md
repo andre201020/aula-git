@@ -15,4 +15,4 @@ https://git-scm.com/download
 - [x] mesclar branch com master - git merge [branch_name]
 - [x] excluir branch - git branch -D [branch_name]
 
-- [] hospedar o projeto na nuvem
+- [x] hospedar o projeto na nuvem
