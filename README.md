@@ -1,12 +1,19 @@
-# Git e Github
+# Terminal Linux WSL-2 (Windows Subsystem for Linux) com Git acessando Github via GCM no host Windows 11
 
-Guia prático
+## Instalar distro/distribuição Linux
+Abrir, como administrador, um terminal do Windows: Windows PowerShell ou Prompt de Comando (cmd.exe). No terminal, executar comandos WSL para selecionar e instalar distros do linux - uma ou mais distros podem ser instaladas num mesmo host Windows. 
+- `wsl --list --verbose`: listar distribuições linux e versões do WSL - WSL 1 ou 2;
+- `wsl --list --online`: listar 'distros' disponíveis online para instalação;
+- `wsl --install -d [Name]`: instalar a distro de nome [Name], conforme retornado pelo comando `wsl --list --online`
 
-# Instalação
+## Instalação do Git
+-Fazer [download do Git]('https://git-scm.com/download');
+- instalar/atualizar o Git no terminal linux WSL2: No Ubuntu: `sudo apt-get install git`. Comumente, o Git vem pré-instalado nas diversas distros linux.
+- instalar o Git e o Git GUI no windows: https://git-scm.com/download/win
+- executar o Git GUI conectando-o com a nuvem do GitHub, autorizando assim as futuras conexões do repositório local do Git com o repositório remoto no GitHub.
+- para vincular o terminal linux WSL-2 ao GCM (git credentials manager) no windows, no próprio terminal linux rodar o comando: `git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager-core.exe"`
 
-https://git-scm.com/download
-
-# Objetivos do estudo
+## Objetivos do estudo
 
 [x] criar pontos na história da produção do projeto 
 - git init: iniciar linha do tempo
@@ -29,13 +36,3 @@ https://git-scm.com/download
 - git branch -D [branch_name]: exclui a branch [branch_name]
 
 [x] hospedar o projeto na nuvem do github
-No caso, optou-se por utilizar o terminal/ambiente WSL-2 (Windows subsystem for Linux 2) com o Windows 11. Para tal, é necessário instalar a(s) distro(s) (distribuição linux) linux.
-1- o comando WSL --install, executado a partir do terminal 'Windows PowerShell' ou do 'Prompt de Comando' (cmd.exe), executados no modo Adminstrador, permite instalar as 'distros' do linux
-- wsl --list --online: listar 'distros' disponíveis
-- wsl --install -d [Name]: instalar a distro de nome [Name], conforme retornado pelo comando 'wsl --list --online'
-- wsl --list --verbose: lista distribuições Linux instaladas e sua versão WSL (se WSL 1 ou WSL 2)
-1- instalar/atualizar o git no terminal WSL2: No Ubuntu > sudo apt-get install git.Geralmente o git vem pré-instalado nas diversas distros
-- instalar o Git e o Git GUI no windows: https://git-scm.com/download/win
-- executar o Git GUI conectá-lo 
-- git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/bin/git-credential-manager-core.exe"
- 
