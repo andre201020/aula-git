@@ -25,10 +25,11 @@ Em distribuições Debian-based como Ubuntu, o comando `sudo apt install git-all
 - enquanto o parâmetro `--local`, que é **default**, usa o escopo mínimo que é o próprio diretório Git, mantendo a configuração no arquivo .git/config.
 
 ## Comandos básicos do Git
+
 Criar pontos na história da produção do projeto:
-- `git init`: iniciar linha do tempo no diretório ativo
-- `git add [file_name]`: preparar atualização para linha do tempo (staging area)
-- `git commit -m "commentários"`: adicionar ponto na linha do tempo
+- `git init`: iniciar rastreamento do git (criação da linha do tempo do projeto)
+- `git add [file_name]`: preparar atualizações para a linha do tempo (subir arquivos novos ou atualizados para **staging area**)
+- `git commit -m "commentários"`: adicionar um ponto na linha do tempo
 
 Verificar mudanças feitas no projeto:
 - `git status`: informa estado das alterações no projeto
@@ -43,7 +44,12 @@ Criar/gerenciar branches de projetos:
 Mesclar branch com master:
 - `git merge [branch_name]`: faz o 'merge' de [branch_name] com o branch ativo
 
-Hospedar projeto na nuvem do github:
-- `git push ...`
+Repositório remoto no GitHub:
+- `git remote -v`: mostrar repositórios **origin** e **upstream**
+- `git remote set-url origin [url repositório remoto github]`: referenciar repositório remoto (após criá-lo no GitHub...)
+- `git push -u origin master`: enviar commit do repositório local para o repositório remoto
+- `git clone <url do github>`: clona repositório remoto do GitHub a partir do diretório local
+- `git pull`: revisar e testar 
+- `git diff`: revisar e testar
 
-[Documentação do Git](https://git-scm.com/doc)
+### [Documentação do Git](https://git-scm.com/doc)
