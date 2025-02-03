@@ -18,6 +18,7 @@ Em distribuições Debian-based como Ubuntu, o comando `sudo apt install git-all
 - `git config --global user.name "Usuário-Nome"`
 - `git config --global user.email usuário@dominio.com`
 6. Mais usos do comando de configuração do Git em [`git config ...`](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+- `git config [-l|--list-all)]  - listar variáveis de ambiente`
 
 ### Usos dos parâmetros de escopo do comando `git config  [--local|--global|--system]`
 - parâmetro `--global`, utilizando `git config --global...`, define configurações do git para o escopo do usuário ativo do linux (`whoami` retorna usuário ativo no linux) e essa configuração é mantida no arquivo `~/.gitconfig` (no caso do Ubuntu);
